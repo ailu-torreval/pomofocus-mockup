@@ -1,0 +1,141 @@
+:root {
+  --main-color100: #db524d;
+  --color50: #df645f;
+  --color200: #c94b46;
+  --color300: #be5551;
+  --light-txt: #f1b9b7;
+  --txt-color: #541c1f;
+  --grey: rgb(194, 194, 194);
+}
+
+* {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: var(--main-color100);
+  height: 90vh;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-bottom: 1px solid var(--color300);
+  padding: 1rem;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 0.7rem;
+}
+
+header ul li {
+  background-color: var(--color50);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+}
+
+section {
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+#light-square {
+  background-color: var(--color50);
+  border-radius: 0.6rem;
+  margin-top: 5%;
+  padding-bottom: 1rem;
+}
+
+#light-square ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding-top: 1rem;
+  justify-content: center;
+  padding-left: 0;
+}
+
+#light-square ul li:first-child {
+  background-color: var(--color300);
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+}
+
+#light-square ul li {
+  align-self: center;
+  font-size: 0.8rem;
+}
+
+#light-square p {
+  font-size: 6rem;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  padding: 0.7rem 3rem 0.7rem 3rem;
+  background-color: white;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid var(--grey);
+  color: var(--main-color100);
+  border-radius: 0.3rem;
+  text-justify: center;
+  font-size: 1.1rem;
+}
+
+#work {
+  color: var(--light-txt);
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#work + p {
+  color: white;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#tasks {
+  display: flex;
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--light-txt);
+  justify-content: space-between;
+}
+
+#tasks p {
+  align-self: baseline;
+}
+
+#tasks i {
+  background-color: var(--color50);
+  border-radius: 0.2rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+#milk-cat {
+  display: flex;
+  margin-top: 0.5rem;
+  background-color: white;
+  color: var(--grey);
+  padding: 0.8rem;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
