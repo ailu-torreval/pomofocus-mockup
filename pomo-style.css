@@ -132,10 +132,68 @@ button {
 }
 
 #milk-cat {
-  display: flex;
+  display: grid;
+  grid-template-columns: 80% 1fr 1fr;
   margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
   background-color: white;
+  border-radius: 0.2rem;
+  border-left: 4px solid black;
   color: var(--grey);
   padding: 0.8rem;
-  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
+#milk-cat p:first-of-type {
+  color: black;
+  font-size: 0.8rem;
+  align-self: center;
+}
+
+#milk-cat i:first-of-type {
+  color: var(--grey);
+  font-size: 1rem;
+  align-self: center;
+  margin-right: 0.2rem;
+}
+
+.numbers {
+  font-size: 0.8rem;
+}
+
+.numbers span {
+  font-size: 1rem;
+}
+
+.elipsis {
+  justify-self: end;
+  align-self: center;
+  border: 1px solid;
+  padding: 0.05rem 0.4rem 0.05rem 0.4rem;
+  border-radius: 3px;
+}
+
+#code-this {
+  display: grid;
+  grid-template-columns: 80% 1fr 1fr;
+  /* margin-top: 0.5rem; */
+  margin-bottom: 0.3rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  color: var(--grey);
+  padding: 0.8rem;
+}
+
+#code-this p:first-of-type {
+  text-decoration: line-through;
+  font-size: 0.8rem;
+  align-self: center;
+}
+
+#code-this i:first-of-type {
+  color: var(--main-color100);
+  font-size: 1rem;
+  align-self: center;
+  margin-right: 0.3rem;
+  margin-left: 0.2rem;
+  text-decoration: none;
 }
