@@ -8,6 +8,9 @@
   --grey: rgb(194, 194, 194);
 }
 
+@media only screen and (max-width: 900px) {
+}
+
 * {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   margin: 0;
@@ -30,6 +33,10 @@ header {
   padding: 1rem;
 }
 
+header p:first-of-type {
+  cursor: pointer;
+}
+
 header ul {
   list-style: none;
   display: flex;
@@ -37,10 +44,16 @@ header ul {
 }
 
 header ul li {
+  cursor: pointer;
   background-color: var(--color50);
   padding: 0.5rem;
   border-radius: 0.4rem;
   font-size: 0.8rem;
+}
+
+header ul li:hover {
+  background-color: var(--color300);
+  box-shadow: 1px 1px 1px 0px var(--color200);
 }
 
 section {
@@ -71,8 +84,16 @@ section {
 }
 
 #light-square ul li {
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  cursor: pointer;
   align-self: center;
   font-size: 0.8rem;
+}
+
+#light-square ul li:hover {
+  background-color: var(--color300);
+  box-shadow: 1px 1px 1px 0px var(--color200);
+  border-radius: 0.2rem;
 }
 
 #light-square p {
@@ -81,6 +102,7 @@ section {
 }
 
 button {
+  cursor: pointer;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -94,6 +116,16 @@ button {
   border-radius: 0.3rem;
   text-justify: center;
   font-size: 1.1rem;
+}
+
+button:hover {
+  box-shadow: 1px 1px 1px 0px var(--color200);
+  color: var(--color300);
+}
+
+button:active {
+  border-bottom: 3px solid grey;
+  transform: translateY(4px);
 }
 
 #work {
@@ -123,12 +155,17 @@ button {
 }
 
 #tasks i {
+  cursor: pointer;
   background-color: var(--color50);
   border-radius: 0.2rem;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
+}
+
+#tasks i:hover {
+  background-color: var(--color300);
 }
 
 #milk-cat {
@@ -143,6 +180,11 @@ button {
   padding: 0.8rem;
 }
 
+#milk-cat:hover {
+  box-shadow: 2px 2px 2px 0px var(--color300);
+  transform: scale(1.004);
+}
+
 #milk-cat p:first-of-type {
   color: black;
   font-size: 0.8rem;
@@ -150,10 +192,19 @@ button {
 }
 
 #milk-cat i:first-of-type {
+  cursor: pointer;
   color: var(--grey);
   font-size: 1rem;
   align-self: center;
   margin-right: 0.2rem;
+}
+
+#milk-cat i:first-of-type:hover {
+  color: var(--color50);
+}
+
+#milk-cat i:first-of-type:active {
+  color: var(--main-color100);
 }
 
 .numbers {
@@ -165,6 +216,7 @@ button {
 }
 
 .elipsis {
+  cursor: pointer;
   justify-self: end;
   align-self: center;
   border: 0.6px solid;
@@ -172,16 +224,25 @@ button {
   border-radius: 3px;
 }
 
+.elipsis:hover {
+  background-color: var(--grey);
+  color: white;
+}
+
 #code-this {
   display: grid;
   grid-template-columns: 80% 1fr 1fr;
-  /* margin-top: 0.5rem; */
   margin-bottom: 0.3rem;
   background-color: white;
   border-radius: 0.2rem;
   color: var(--grey);
   padding: 0.8rem;
   box-shadow: 0 1px 0.9px 0.5px var(--color300);
+}
+
+#code-this:hover {
+  box-shadow: 2px 2px 2px 0px var(--color300);
+  transform: scale(1.004);
 }
 
 #code-this p:first-of-type {
@@ -200,6 +261,7 @@ button {
 }
 
 #add-task {
+  cursor: pointer;
   background-color: var(--color300);
   padding: 0.8rem;
   border-radius: 0.2rem;
@@ -208,6 +270,17 @@ button {
   color: var(--light-txt);
   border: 1px dashed var(--light-txt);
   font-size: 0.8rem;
+}
+
+#add-task:hover {
+  color: white;
+  border: 1px solid var(--light-txt);
+  box-shadow: 1px 1px 1px 0px var(--color200);
+}
+
+#add-task:active {
+  box-shadow: 1px 1px 1px 0px var(--color300);
+  transform: translateY(2px);
 }
 
 #est {
@@ -279,6 +352,7 @@ footer {
 
 footer ul li {
   list-style: none;
+  cursor: pointer;
 }
 
 footer ul:first-of-type {
@@ -300,6 +374,10 @@ footer ul:last-of-type {
   padding-left: 0;
 }
 
+footer ul li:hover {
+  color: var(--main-color100);
+}
+
 footer p {
   text-align: center;
   color: var(--txt-color);
@@ -308,6 +386,7 @@ footer p {
 }
 
 footer span {
+  cursor: pointer;
   color: var(--main-color100);
 }
 
