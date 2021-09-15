@@ -8,9 +8,6 @@
   --grey: rgb(194, 194, 194);
 }
 
-@media only screen and (max-width: 900px) {
-}
-
 * {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   margin: 0;
@@ -392,4 +389,19 @@ footer span {
 
 footer p:last-of-type {
   font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  section {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  article {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
 }
